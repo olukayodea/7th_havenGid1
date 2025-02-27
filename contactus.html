@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>7thaven</title>
+</head>
+
+<body class="questrial-regular ">
+    <nav class=" md:px-6 xl:px-32   md:flex md:items-center md:justify-between">
+        <div class="py-5 m-0 flex justify-between pr-5  items-center">
+          <span class="text-2xl flex flex-col">
+            <span
+              href="./index.html"
+              class="flex font-bold  items-center px-5 p-3 rounded-3xl cursor-pointer "
+              ><a href="./index.html"><img src="./Logo main 1.png" class="h-6 lg:h-8" alt=""></a></i
+            ></span>
+          </span>
+          <span class="text-3xl cursor-pointer md:hidden">
+            <img src="./align-center.png" onclick="Menu(this)" 
+            class="text-[#1b5e20] h-6" alt="">
+          </span>
+        </div>
+        <ul
+          class="md:flex md:items-center text-bold z-[1] md:z-auto md:static bg-white  text-[#1b5e20] w-full md:w-auto absolute left-0 md:py-0 py-4 md:pl-0 pl-5 md:opacity-100 opacity-0 t transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a href="./index.html" class="text-[20px] text-[#18181B] hover:text-orange-500 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="./about.html" class="text-[20px] text-[#18181B] hover:text-orange-500">About</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[20px] text-[#18181B] hover:text-orange-500">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bg-[#E0FDD5] flex flex-col items-center xl:gap-5 p-10">
+        <h1 class="xl:text-[79.17px] text-[36px] bg-red-10"><b>Let’s</b>    <b class="text-[#43852A]">Connect</b></h1>
+        <p class="text-[16px] xl:text-[32px] flex text-center leading-[20px]">Have questions? Need expert guidance? We’re here to help.</p>
+        <div class="xl:mt-4">
+            <div class="flex items-center text-[12.1px] xl:text-[20px] gap-2 ">
+                <img src="./icon 2.png" class="h-[14.5185546875px]" alt="">
+                <p>Email us: Support@7thaven</p>
+            </div>
+            <div class="flex items-center text-[12.1px] xl:text-[20px] gap-2 ">
+                <img src="./icon.png" class="h-[14.5185546875px]" alt="">
+                <p>Visit us: Windsor, Ontario</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center p-5 my-5 xl:gap-10 gap-7">
+        <p class="xl:text-[20px] text-[#000000] text-[14px] flex text-center px-[60px]"><b>Or fill out the form below, and we’ll get back to you ASAP. Request free consultation</b></p>
+        <div class="bg-white p-6 border-[1px] border-[#FF9B00] rounded-lg shadow-lg w-full max-w-md min-h-[480px]">
+            <h2 class="text-xl font-bold mb-4 text-center">Contact Us</h2>
+            
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <!-- First Name & Last Name in the Same Row -->
+                <div class="flex space-x-2">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name*" 
+                        class="w-1/2 p-3 border border-gray-300 rounded placeholder-gray-500" required>
+    
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name*" 
+                        class="w-1/2 p-3 border border-gray-300 rounded placeholder-gray-500" required>
+                </div>
+    
+                <input type="email" id="email" name="email" placeholder="Email*" 
+                    class="w-full p-3 border border-gray-300 rounded mt-3 placeholder-gray-500" required>
+    
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number*" 
+                    class="w-full p-3 border border-gray-300 rounded mt-3 placeholder-gray-500" required>
+    
+                <textarea id="message" name="message" placeholder="Your Message..." 
+                    class="w-full p-3 border border-gray-300 rounded mt-3 placeholder-gray-500 min-h-[100px]"></textarea>
+    
+                <button type="submit" class="w-full bg-black text-white py-3 xl:py-5 rounded mt-4 hover:bg-gray-800">
+                    Send Message
+                </button>
+            </form>
+            
+            <!-- Success Message -->
+            <p id="responseMessage" class="text-center text-green-500 mt-4 hidden">Message Sent Successfully!</p>
+        </div>
+    
+    
+    
+    
+      </div>
+
+      <!-- footer -->
+      <footer class="p-6 lg:px-[150px] px-10 overflow-hidden bg-[#FFEBB3] questrial-regular">
+        <div class="bg-[#F5D170] flex flex-col text-center justify-center gap-5 py-10 px-[28px]  my-10 rounded-xl xl:px-[330px]">
+            <h1 class="text-[32px] leading-[32px] font-bold px-9 ">Let’s Take Your <br class="hidden lg:flex">
+                Business to the Next Level</h1>
+            <p class="text-[15px] px-4 leading-[16.5px] font-extralight">Seamless payments, reliable liquidity, and innovative financial
+                solutions—tailored just for you</p>
+            <div  class="flex  items-center justify-center text-center">
+                <button class="text-[20px] text-white w-0 bg-[#123336]  p-3  w-auto rounded-lg px-6">Get in touch</button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <p class="text-[20px] text-extrabold">
+            <span
+              href="#"
+              class="flex z-[50] font-bold bg-white items-center rounded-3xl cursor-pointer"
+              ><img src="./Logo main 1.png" class="h-[24.162572860717773px] bg-[#FFEBB3] lg:h-[46.348209381103516px]" alt=""
+            /></span>
+          </p>
+          <div class="flex h-6">
+            <a href=""><img class="h-6" src="./Link - Instagram.png" alt="" /></a>
+            <a href=""><img class="h-6" src="./Link - Twitter.png" alt="" /></a>
+          </div>
+        </div>
+        <ul
+              class="flex gap-5 my-7  text-[12.03px]  text-[#1b5e20] "
+            >
+              <li class="">
+                <a href="./index.html" class="text-md hover:text-orange-500 duration-500">Home</a>
+              </li>
+              <!-- <li class="">
+                <a href="#" class=" hover:text-orange-500">Solution</a>
+              </li> -->
+              <li class="">
+                <a href="./about.html" class=" hover:text-orange-500">About Us</a>
+              </li>
+              <li class="">
+                <a href="#" class=" hover:text-orange-500">Contact Us</a>
+              </li>
+            </ul>
+        <img
+          src="./Divider line.png"
+          class="w-full mt-4 text-white h-[0.5px]"
+          alt=""
+        />
+        <div
+          class="flex md:flex-row flex-col md:gap-0 gap-6 justify-between mt-4"
+        >
+          <div class="flex justify-between gap-10">
+            <div class="flex flex-col gap-2">
+              <h1 class="font-normal text-[16px] text-[#000000]">Legal</h1>
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Term of service</a
+              >
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Complaints Management Policy</a
+              >
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Privacy Policy</a
+              >
+            </div>
+            <div class="flex flex-col gap-2">
+              <h1 class="font-normal text-[16px] text-[#000000]">Business</h1>
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Payment solution</a
+              >
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Liquidity provision</a
+              >
+              <a href="" class="font-light text-[12px] text-[#71717A]"
+                >Financial services</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1 class="font-normal text-[16px] text-[#000000]">Reach out to us</h1>
+            <a href="" class="font-light text-[12px] text-[#71717A]"
+              >Support@7thaven</a
+            >
+          </div>
+        </div>
+        <img
+          src="./Divider line.png"
+          class="w-full mt-10 mb-8 text-white h-[0.5px]"
+          alt=""
+        />
+        <p class="text-[10.51px] text-[#1D1F13] mt-4 text-[#71717A]">
+          Copyright © 2025 7th haven | Powered by 7th haven
+        </p>
+      </footer>
+      <!-- footer -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Simulate form processing
+            document.getElementById("responseMessage").classList.remove("hidden");
+            document.getElementById("contactForm").reset(); // Reset form fields
+
+            // Hide success message after 3 seconds
+            setTimeout(() => {
+                document.getElementById("responseMessage").classList.add("hidden");
+            }, 3000);
+        }
+    </script>
+
+    <script>
+        function Menu(e) {
+          let list = document.querySelector("ul");
+          e.name === "menu"
+            ? ((e.name = "close"),
+              list.classList.add("top-[80px]"),
+              list.classList.add("opacity-100"))
+            : ((e.name = "menu"),
+              list.classList.remove("top-[80px]"),
+              list.classList.remove("opacity-100"));
+        }
+    </script>
+    </body>
+    </html>
