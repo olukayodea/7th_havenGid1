@@ -144,7 +144,7 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
 </div>
 </div>
 
-<div class="bg-[#095056] flex flex-col md:flex-row gap-10  m-5 p-5 md:pr-0 pb-0 xl:p-10 xl:pb-0 xl:pr-0  rounded-md xl:m-20 lg:m-[60px] lg:mx-[100px] md:mx-10 xl:mx-[300px]">
+<!-- <div class="bg-[#095056] flex flex-col md:flex-row gap-10  m-5 p-5 md:pr-0 pb-0 xl:p-10 xl:pb-0 xl:pr-0  rounded-md xl:m-20 lg:m-[60px] lg:mx-[100px] md:mx-10 xl:mx-[300px]">
   <div class="flex flex-col gap-5 md:w-[50%] ">
     <h1 class="text-[#E0FDD5] leading-[35px] text-[34.33px]">How can we
       help you?​</h1>
@@ -167,8 +167,86 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
     </div>
   </div>
   <div class="bg-red-10 flex items-end  "><img src="./Frame 3905.png" class="xl:h-[400px] h-[320px] " alt=""></div>
-</div>
+</div> -->
 
+
+<div class="bg-[#095056] flex flex-col md:flex-row gap-10 m-5 p-5 md:pr-0 pb-0 xl:p-10 xl:pb-0 xl:pr-0 rounded-md xl:m-20 lg:m-[60px] lg:mx-[100px] md:mx-10 xl:mx-[300px]">
+        
+  <!-- Left Section (Text & Accordion) -->
+  <div class="flex flex-col gap-5 md:w-[50%]">
+      <h1 class="text-[#E0FDD5] leading-[35px] text-[34.33px]">
+          How can we <br> help you?
+      </h1>
+      <!-- Accordion Section -->
+      <div class="flex flex-col gap-5 mb-[50px] mt-[20px]">
+        <div class="accordion-item border-b-[1px] border-[#118089] pb-3">
+          <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+             
+              <h2>Streamlined Payment Processing</h2>
+          </button>
+          <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px]">
+            Simplify your payment processes with our advanced payment solutions, ensuring seamless transactions for your customers and enhanced efficiency for your business.
+          </p>
+      </div>
+
+          <div class="accordion-item border-b-[1px] border-[#118089] pb-3">
+              <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+                 
+                  <h2>Access to Reliable Liquidity</h2>
+              </button>
+              <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px] ">
+                  We provide reliable liquidity solutions tailored to your financial needs.
+              </p>
+          </div>
+
+          <div class="accordion-item border-b-[1px] border-[#118089] pb-3">
+              <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+             
+                  <h2>Enhanced Security Measures</h2>
+              </button>
+              <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px]">
+                  Advanced security protocols to keep your financial transactions safe.
+              </p>
+          </div>
+
+          <div class="accordion-item border-b-[1px] border-[#118089] pb-3">
+              <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+                 
+                  <h2>Tailored Financial Services</h2>
+              </button>
+              <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px]">
+                  Personalized financial services to match your business needs.
+              </p>
+          </div>
+
+          <div class="accordion-item border-b-[1px] border-[#118089] pb-3">
+              <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+               
+                  <h2>Expert Guidance/Consultancy and Support</h2>
+              </button>
+              <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px]">
+                  Access expert consultancy to navigate complex financial landscapes.
+              </p>
+          </div>
+
+          <div class="accordion-item  border-b-[0.1px] border[#118089] pb-3">
+              <button class="accordion-btn flex items-center gap-3 text-white w-full text-left" onclick="toggleAccordion(this)">
+           
+                  <h2>Innovative Technology Solutions</h2>
+              </button>
+              <p class="accordion-content hidden text-[#D4DCDE] text-[12.42px]">
+                  Cutting-edge technology solutions to optimize your financial operations.
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Right Section (Image) -->
+  <div class="bg-red-10 flex items-end">
+      <img src="./Frame 3905.png" class="xl:h-[400px] h-[320px]" alt="">
+  </div>
+
+</div>
 
 <!-- footer -->
 <footer class="p-6 lg:px-[150px] px-10 overflow-hidden bg-[#FFEBB3] questrial-regular">
@@ -178,7 +256,7 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
         <p class="text-[15px] px-4 leading-[16.5px] font-extralight">Seamless payments, reliable liquidity, and innovative financial
             solutions—tailored just for you</p>
         <div  class="flex  items-center justify-center text-center">
-            <button class="text-[20px] text-white w-0 bg-[#123336]  p-3  w-auto rounded-lg px-6">Get in touch</button>
+            <button class="text-[20px] text-white w-0 bg-[#123336]  p-3  w-auto rounded-lg px-6"><a href="./contactus.html">Get in touch</a></button>
         </div>
     </div>
     <div class="flex justify-between items-center">
@@ -192,7 +270,7 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
       <div class="flex h-6 flex items-center gap-2">
         <a href="https://www.instagram.com/7thavenglobal?utm_source=qr&igsh=MWMydzdldndwcDk0Yg=="><img class="h-6" src="./Link - Instagram.png" alt="" /></a>
         <a href="https://x.com/7thavenGlobal?t=P-1jvvwKmrqo2IfzirKC3w&s=09"><img class="h-4" src="./Group (4).png" alt="" /></a>
-        <a href=""><img class="h-4" src="./Vector (7).png" alt="" /></a>
+        <a href="https://www.linkedin.com/company/7thaven/"><img class="h-4" src="./Vector (7).png" alt="" /></a>
       </div>
     </div>
     <ul
@@ -262,6 +340,8 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
     </p>
   </footer>
   <!-- footer -->
+
+
 <script>
     function Menu(e) {
       let list = document.querySelector("ul");
@@ -274,5 +354,13 @@ class="flex  mb-8 md:items-center flex-col items-start lg:gap-6 lg:mt-14 mt-10 g
           list.classList.remove("opacity-100"));
     }
   </script>
+      <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            content.classList.toggle("hidden");
+            button.querySelector(".arrow").classList.toggle("rotate-180");
+        }
+    </script>
+
 </body>
 </html>
